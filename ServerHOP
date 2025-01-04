@@ -1,0 +1,216 @@
+print ("ClockMenu On Top!Sorry,admins.")
+local UILib = loadstring(game:HttpGet('https://raw.githubusercontent.com/StepBroFurious/Script/main/HydraHubUi.lua'))()
+local Window = UILib.new("ClockMenu", game.Players.LocalPlayer.Name, "DEVELOPER")
+local Category1 = Window:Category("House", "http://www.roblox.com/asset/?id=8395621517")
+local SubButton1 = Category1:Button("Page1", "http://www.roblox.com/asset/?id=8395747586")
+local Section1 = SubButton1:Section("Section", "Left")
+local Category2 = Window:Category("Games", "http://www.roblox.com/asset/?id=8395621517")
+local SubButton2 = Category2:Button("GamesList", "http://www.roblox.com/asset/?id=8395747586")
+local SubButton3 = Category2:Button("GamesList2", "http://www.roblox.com/asset/?id=8395747586")
+local Section2 = SubButton2:Section("Games", "Left")
+local Section3 = SubButton2:Section("Games", "Right")
+local Section4 = SubButton3:Section("GamesList2", "Right")
+local Section5 = SubButton3:Section("GamesList2", "Left")
+local Category3 = Window:Category("System.dll", "http://www.roblox.com/asset/?id=8395621517")
+local SubButton4 = Category3:Button("Universal", "http://www.roblox.com/asset/?id=8395747586")
+local Section6 = SubButton4:Section("Player", "Left")
+
+
+Section1:Button({
+    Title = "ESP AND AIMBOT",
+    ButtonName = "LAUNCH",
+    Description = "AZURE MODDED",
+    }, function(value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Actyrn/Scripts/main/AzureModded"))()
+end)
+Section1:Button({
+    Title = "SYSTEM BROKEN",
+    ButtonName = "LAUNCH",
+    Description = "SystemBroken Script!"
+    }, function(value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/H20CalibreYT/SystemBroken/main/script"))()
+end)
+Section1:Button({
+    Title = "INFINITE YIELD",
+    ButtonName = "LAUNCH",
+    Description = "INFINITE YIELD SCRIPT"
+    }, function(value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+end)
+Section1:Button({
+    Title = "Fly System",
+    ButtonName = "LAUNCH",
+    Description = "Fly Made By Dio"
+    }, function(value)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/qAxAp/DioFly/main/DioFly.lua'))()
+end)
+Section1:Button({
+    Title = "OrcaHub",
+    ButtonName = "Launch",
+    Description = "ORCA HUB - BEST",
+    }, function(value)
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/richie0866/orca/master/public/snapshot.lua"))()
+end)
+Section1:Button({
+    Title = "Brint Parts",
+    ButtonName = "Launch",
+    Description = "BringParts",
+    }, function(value)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Bac0nHck/Scripts/main/BringFlingPlayers"))("More Scripts: t.me/arceusxscripts")
+end)
+Section1:Button({
+    Title = "ChatBypass",
+    ButtonName = "Launch",
+    Description = "ChatBypass",
+    }, function(value)
+        loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Synergy-Networks/products/main/BetterBypasser/loader.lua"))()
+end)
+Section1:Button({
+    Title = "AntiCheat Bypass",
+    ButtonName = "Launch",
+    Description = "Remove AntiCheat",
+    }, function(value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Next1x/Nextix./main/UniversalACBypass"))()
+end)
+
+Section2:Button({
+    Title = "MM2",
+    ButtonName = "Launch",
+    Description = "Murder Mystery 2",
+    }, function(value)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Au0yX/Community/main/XhubMM2'))()
+end)
+Section2:Button({
+    Title = "Therapy",
+    ButtonName = "Launch",
+    Description = "15%Chance of ban",
+    }, function(value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/therapy-gui/main/therapy-gui.lua", true))()
+end)
+Section2:Button({
+    Title = "Doors",
+    ButtonName = "Launch",
+    Description = "HAVE CHANCE OF BAN",
+    }, function(value)
+        loadstring(game:HttpGet("https://scripts.waza80.com/script/loader"))()
+end)
+Section2:Button({
+    Title = "Arsenal",
+    ButtonName = "Launch",
+    Description = "NO BAN CHANCE",
+    }, function(value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/JackyPoopoo/cartel/main/0000000000000000000000000000000000000000000000000"))()
+end)
+Section2:Button({
+    Title = "Slap Battles",
+    ButtonName = "Launch",
+    Description = "KEY SYSTEM",
+    }, function(value)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Skzuppy/forge-hub/main/loader.lua'))()
+end)
+Section2:Button({
+    Title = "Slap Battles",
+    ButtonName = "Launch",
+    Description = "NO KEY SYSTEM",
+    }, function(value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ChaosBringerTeam/fytafjkgawjkfgwakijfgawghio8u/main/vqKMWY6x9vSDxzpjhHWTwd8FEaKtIFOD"))()
+end)
+Section2:Button({
+    Title = "Brookhaven",
+    ButtonName = "Launch",
+    Description = "NO CHANCE BAN",
+    }, function(value)
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/sXPiterXs1111/Sanderxv3.30/main/sanderx3.30')))()
+end)
+Section2:Button({
+    Title = "BloxFruits",
+    ButtonName = "Launch",
+    Description = "NO CHANCE BAN",
+    }, function(value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+end)
+    Section2:Button({
+        Title = "CounterBlox",
+        ButtonName = "Launch",
+        Description = "NO CHANCE BAN",
+        }, function(value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fliskScript/jaran.vip/main/free.lua"))()
+ end)
+Section2:Button({
+    Title = "Squid Game",
+    ButtonName = "Launch",
+    Description = "94% SAFE",
+    }, function(value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LilFrench21/Hecta/main/Script/Squid%20Game"))()
+end)
+Section2:Button({
+    Title = "The Test",
+    ButtonName = "Launch",
+    Description = "PATHED<PEDING FIXS",
+    }, function(value)
+        loadstring(game:HttpGet('https://paste.ee/r/z1uao'))()
+end)
+Section3:Button({
+    Title = "Working",
+    ButtonName = "Launch",
+    Description = "The Presentation Experience",
+    }, function(value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/imaboy12321/eewewew/main/ewewewewe"))()
+end)
+Section3:Button({
+    Title = "Fisch",
+    ButtonName = "Launch",
+    Description = "Working",
+    }, function(value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Skzuppy/forge-hub/main/loader.lua"))()
+end)
+
+Section3:Button({
+    Title = "Game Name 0.1",
+    ButtonName = "Launch",
+    Description = "Working",
+    }, function(value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Skzuppy/forge-hub/main/loader.lua"))()
+end)
+
+Section3:Button({
+    Title = "Game Name",
+    ButtonName = "Launch",
+    Description = "Working",
+    }, function(value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Skzuppy/forge-hub/main/loader.lua"))()
+end)
+
+Section3:Button({
+    Title = "Game Name1",
+    ButtonName = "Launch",
+    Description = "Working",
+    }, function(value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Skzuppy/forge-hub/main/loader.lua"))()
+end)
+Section3:Button({
+    Title = "Game Name1",
+    ButtonName = "Launch",
+    Description = "Working",
+    }, function(value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Skzuppy/forge-hub/main/loader.lua"))()
+end)
+
+Section3:Button({
+    Title = "Game Name1",
+    ButtonName = "Launch",
+    Description = "Working",
+    }, function(value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Skzuppy/forge-hub/main/loader.lua"))()
+end)
+
+Section6:Button({
+    Title = "Server Hop",
+    ButtonName = "Launch",
+    Description = "Working",
+    }, function(value)
+        loadstring(game:HttpGet("https://gist.githubusercontent.com/CheatUserzz/5e7500b47fa64baa91d381574a786392/raw/1f19c4adb61a229685c79ca3ffe5bfba74eb76ff/gistfile1.txt"))()
+end)
+
+
+
