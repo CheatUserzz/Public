@@ -1,0 +1,19 @@
+
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.ResetOnSpawn = false
+ScreenGui.DisplayOrder = 9999
+
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(0, 200, 0, 100)
+Frame.Position = UDim2.new(0.5, -100, 0.5, -50)
+Frame.Parent = ScreenGui
+
+local ButtonOn = Instance.new("TextButton")
+ButtonOn.Size = UDim2.new(0, 100, 0, 50)
+ButtonOn.Position = UDim2.new(0, 0, 0, 0)
+ButtonOn.Text = "Enable Panel"
+ButtonOn.Parent = Frame
+ButtonOn.MouseButton1Click:Connect(function()
+    game:GetService("Players").LocalPlayer.PlayerGui.MainGui.PS.Active = true
+game:GetService("Players").LocalPlayer.PlayerGui.MainGui.PS.Visible = true
+end)
