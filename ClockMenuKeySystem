@@ -1,0 +1,63 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Clock Menu", HidePremium = true, SaveConfig = true, ConfigFolder = "ClockMenu.External.executorfile"})
+
+OrionLib:MakeNotification({
+	Name = "Clock Menu Chose",
+	Content = "Its Free Now! KEY [FREE]",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+_G.Key = "FREE" -- You Put Your Key Here
+_G.KeyInput = "string"
+
+function MakeScriptHub()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/CheatUserzz/Public/refs/heads/main/seguuuuureeiiaiaiaiaiaiiaiaiaiiaiai"), true))() -- You Put Your Script Here
+
+end
+
+
+function CorrectKeyNotifications()
+    OrionLib:MakeNotification({
+        Name = "Correct Key",
+        Content = "Welcome",
+        Image = "rbxassetid://4483345998",
+        Time = 10
+    })
+end
+
+function WrongKeyNotifications()
+    OrionLib:MakeNotification({
+        Name = " Wrong Key",
+        Content = "Free Key [FREE]",
+        Image = "rbxassetid://4483345998",
+        Time = 10
+    })
+end
+
+local Tab = Window:MakeTab({
+	Name = "Free Version",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddTextbox({
+	Name = "Enter Key",
+	Default = "Enter Key",
+	TextDisappear = true,
+	Callback = function(Value)
+        _G.KeyInput = Value
+	end	  
+})
+
+Tab:AddButton({
+	Name = "Check Key!",
+	Callback = function()
+        if _G.KeyInput == _G.Key then
+         MakeScriptHub()
+         CorrectKeyNotifications()
+     else
+        WrongKeyNotifications()
+        end
+  	end    
+})
