@@ -1,0 +1,105 @@
+print ("Clock Menu On The TOP1")
+local UILib = loadstring(game:HttpGet('https://raw.githubusercontent.com/StepBroFurious/Script/main/HydraHubUi.lua'))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = UILib.new("Clock Menu", game.Players.LocalPlayer.Name, "")
+local Category1 = Window:Category("Player", "http://www.roblox.com/asset/?id=8395621517")
+local SubButton1 = Category1:Button("SAFE🟢", "http://www.roblox.com/asset/?id=8395747586")
+local Section1 = SubButton1:Section("Safe Page 1🟢", "Left")
+local Section2 = SubButton1:Section("Safe Page 1🟢", "Right")
+local Category2 = Window:Category("Games", "http://www.roblox.com/asset/?id=8395621517")
+local SubButton2 = Category2:Button("Game List 1", "http://www.roblox.com/asset/?id=8395747586")
+local Section3 = SubButton2:Section("Showing Game List", "Left")
+
+
+OrionLib:MakeNotification({
+	Name = "ClockMenu",
+	Content = "Welcome!, The Key Will Change In 4 days",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+OrionLib:MakeNotification({
+	Name = "Creator Website",
+	Content = "Oficial Website Link : https://roblox2.my.canva.site/clockmenu ",
+	Image = "rbxassetid://4483345998",
+	Time = 15
+})
+
+OrionLib:MakeNotification({
+	Name = "Politics",
+	Content = "Please Dont Share The Key, you have chance of ban if you use fake or shared key!",
+	Image = "rbxassetid://4483345998",
+	Time = 9
+})
+
+
+
+Section1:Button({
+    Title = "PP SCRIPT",
+    ButtonName = "Launch",
+    Description = "PP Script - 🟢",
+    }, function(value)
+    loadstring(game:HttpGet('https://pastebin.com/raw/ckRgqyad'))()
+    end)
+
+    Section1:Button({
+        Title = "Reverse",
+        ButtonName = "Launch",
+        Description = "Press [E] - 🟢",
+        }, function(value)
+        loadstring(game:HttpGet('https://pastebin.com/raw/HAiQa0ap'))()
+        end)
+
+        Section1:Button({
+            Title = "Chat Bypasser",
+            ButtonName = "Launch",
+            Description = "Chat Bypasser - 🟢",
+            }, function(value)
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/Gazer-Ha/Reimagined/refs/heads/main/Gaze%20bypass'))()
+            end)
+        
+    
+
+Section1:Button({
+Title = "Infinite Yield",
+ButtonName = "Launch",
+Description = "Infinite Yield - 🟢",
+}, function(value)
+loadstring(game:HttpGet('https://raw.githubusercontent.com/edgeiy/infiniteyield/master/source'))()
+end)
+
+Section1:Button({
+    Title = "Aquamatrix",
+    ButtonName = "Launch",
+    Description = "Aquamatrix - 🟢",
+    }, function(value)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ExploitFin/AquaMatrix/refs/heads/AquaMatrix/AquaMatrix"))()
+    end)
+
+    Section1:Button({
+        Title = "Panndora",
+        ButtonName = "Launch",
+        Description = "PandoraGUI - 🟢",
+        }, function(value)
+        loadstring(game:HttpGet('https://pastebin.com/raw/CwbL11xT'))()
+        end)
+                
+    
+
+
+Section1:Textbox({
+    Title = "Chat On Developer Console",
+    Description = "Put What You Want To DeveloperLog",
+    Default = "",
+    }, function(value)
+    print(value)
+end)
+
+Section3:Button({
+    Title = "Counter Blox",
+    ButtonName = "Launch",
+    Description = "Counter Blox - 🟢",
+    }, function(value)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fliskScript/jaran.vip/main/free.lua"))()
+    end)
+
