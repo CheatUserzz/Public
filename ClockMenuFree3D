@@ -1,0 +1,78 @@
+
+local Library = loadstring(game:HttpGet("https://reallinen.github.io/Files/Scripts/Linui.lua"))()
+local Section = Library:Section("House . Player") -- Creates a section
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Label = Section:Label({
+	Text = "ClockMenu :RP", -- Text/Name of the label
+})
+
+OrionLib:MakeNotification({
+    Name = "ClockMenu:Free",
+    Content = "This Is FREE SCRIPT!",
+    Image = "rbxassetid://4483345998",
+    Time = 10
+})
+
+
+local Button = Section:Button({
+	
+	Text = "ESP", -- Text/Name of the button
+
+	Callback = function() -- What will be fired when the button is clicked [ optional ] | Default: function() end
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua'))() 
+    OrionLib:MakeNotification({
+        Name = "ClockMenu:RP",
+        Content = "Loading [UNNAMED ESP]",
+        Image = "rbxassetid://4483345998",
+        Time = 10
+    })
+	end
+})
+
+
+local Button = Section:Button({
+	
+	Text = "AIMBOT", -- Text/Name of the button
+
+	Callback = function() -- What will be fired when the button is clicked [ optional ] | Default: function() end
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/agreed69-scripts/open-src-scripts/refs/heads/main/Universal%20Aimbot.lua",true))()
+    OrionLib:MakeNotification({
+        Name = "ClockMenu:RP",
+        Content = "Loading [AIMBOT]",
+        Image = "rbxassetid://4483345998",
+        Time = 10
+    })
+	end
+})
+
+
+local Button = Section:Button({
+	
+	Text = "Reverse [PRESS [E] ]", -- Text/Name of the button
+
+	Callback = function() -- What will be fired when the button is clicked [ optional ] | Default: function() end
+    loadstring(game:HttpGet('https://pastebin.com/raw/sQFf59Qa'))()
+    OrionLib:MakeNotification({
+        Name = "ClockMenu:RP",
+        Content = "Loading [REVERSE]",
+        Image = "rbxassetid://4483345998",
+        Time = 10
+    })
+	end
+})
+
+local Button = Section:Button({
+	
+	Text = "Snypase X ", -- Text/Name of the button
+
+	Callback = function() -- What will be fired when the button is clicked [ optional ] | Default: function() end
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/Chillz-s-scripts/main/Synapse-X-Remake.lua"))()
+    OrionLib:MakeNotification({
+        Name = "ClockMenu:RP",
+        Content = "Loading [Snypase X - EXECUTOR]",
+        Image = "rbxassetid://4483345998",
+        Time = 10
+    })
+	end
+})
