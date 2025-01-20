@@ -1,0 +1,44 @@
+local NotificationHolder = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))()
+local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/CheatUserzz/Public/refs/heads/main/9_ClockMenuLoaderUiOrionLibray')))()
+local Window = OrionLib:MakeWindow({Name = "ClockMenu - MM2 - EN", HidePremium = false, SaveConfig = true, ConfigFolder = "ClockMenuSaveData_MM2"})
+
+OrionLib:MakeNotification({
+	Name = "ClockMenuSystem.mm2",
+	Content = "Current Status [🟢] - Update 1.0V ",
+	Image = "rbxassetid://4483345998",
+	Time = 10
+})
+
+
+local Tab = Window:MakeTab({
+	Name = "Scripts",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Script Number 1",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Au0yX/Community/main/XhubMM2"))()
+        OrionLib:MakeNotification({
+            Name = "WARNING [🟢]",
+            Content = "Loading Murder Mystery 2 - Script",
+            Image = "rbxassetid://4483345998",
+            Time = 10
+        })
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Script Number 2",
+	Callback = function()
+        loadstring(game:HttpGet('https://api.luarmor.net/files/v3/loaders/2529a5f9dfddd5523ca4e22f21cceffa.lua'))()
+        OrionLib:MakeNotification({
+            Name = "WARNING [🟢]",
+            Content = "Loading Murder Mystery 2 - Script",
+            Image = "rbxassetid://4483345998",
+            Time = 10
+        })
+  	end    
+})
