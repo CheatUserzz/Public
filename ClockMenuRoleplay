@@ -1,0 +1,39 @@
+local NotificationHolder = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))()
+local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/CheatUserzz/Public/refs/heads/main/9_ClockMenuLoaderUiOrionLibray')))()
+local Window = OrionLib:MakeWindow({Name = "ClockMenu - Troll", HidePremium = false, SaveConfig = true, ConfigFolder = "ClockMenuSaveData"})
+
+local Tab = Window:MakeTab({
+	Name = "Street Z War 2",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+OrionLib:MakeNotification({
+	Name = "ClockMenuSystem.dll",
+	Content = "Current Status - 🟢 ",
+	Image = "rbxassetid://4483345998",
+	Time = 10
+})
+
+
+Tab:AddButton({
+	Name = "Script 1",
+	Callback = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/CheatUserzz/Public/refs/heads/main/Roleplay-War-Street-2')))()
+        OrionLib:MakeNotification({
+            Name = "WARNING [🟢]",
+            Content = "Loading Game []",
+            Image = "rbxassetid://4483345998",
+            Time = 10
+        })
+  	end,    
+})
+
+
+local LATab = Window:MakeTab({
+	Name = "",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
