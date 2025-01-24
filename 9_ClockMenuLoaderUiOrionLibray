@@ -1,6 +1,6 @@
 print ("This Libray Is From Clock Menu!")
 local notifSound = Instance.new("Sound",workspace)
-notifSound.PlaybackSpeed = 1.5
+notifSound.PlaybackSpeed = 1.0
 notifSound.Volume = 1
 notifSound.SoundId = "rbxassetid://3320590485"
 notifSound.PlayOnRemove = true
