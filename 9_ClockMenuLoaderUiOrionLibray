@@ -1,5 +1,11 @@
-
-
+print ("This Libray Is From Clock Menu!")
+local notifSound = Instance.new("Sound",workspace)
+notifSound.PlaybackSpeed = 1.5
+notifSound.Volume = 1
+notifSound.SoundId = "rbxassetid://3320590485"
+notifSound.PlayOnRemove = true
+notifSound:Destroy()
+game.StarterGui:SetCore("SendNotification", {Title = "Clock Menu Libray", Text = "Orion Libray [MODIFIED BY CLOCK-MENU]", Icon = "rbxassetid://11490321106", Duration = 10, Button1 = "I Sure!"})
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
@@ -14,7 +20,7 @@ local OrionLib = {
 	Flags = {},
 	Themes = {
 		Default = {
-			Main = Color3.fromRGB(25, 25, 25),
+			Main = Color3.fromRGB(0, 0, 0),
 			Second = Color3.fromRGB(32, 32, 32),
 			Stroke = Color3.fromRGB(60, 60, 60),
 			Divider = Color3.fromRGB(60, 60, 60),
@@ -24,7 +30,7 @@ local OrionLib = {
 	},
 	SelectedTheme = "Default",
 	Folder = nil,
-	SaveCfg = false
+	SaveCfg = true
 }
 
 --Feather Icons https://github.com/evoincorp/lucideblox/tree/master/src/modules/util - Created by 7kayoh
@@ -35,7 +41,7 @@ local Success, Response = pcall(function()
 end)
 
 if not Success then
-	warn("\nClock Menu Use Orion Libray. Error code: " .. Response .. "\n")
+	warn("\n Ocurred A Error On Trying Get Icons. Error code: " .. Response .. "\n")
 end	
 
 local function GetIcon(IconName)
@@ -650,9 +656,9 @@ function OrionLib:MakeWindow(WindowConfig)
 		MainWindow.Visible = false
 		UIHidden = true
 		OrionLib:MakeNotification({
-			Name = "Interface Hidden",
+			Name = "Clock Menu - Interface Is Hidded",
 			Content = "Tap RightShift to reopen the interface",
-			Time = 5
+			Time = 20
 		})
 		WindowConfig.CloseCallback()
 	end)
@@ -1699,7 +1705,7 @@ function OrionLib:MakeWindow(WindowConfig)
 					Position = UDim2.new(0, 150, 0, 112),
 					Font = Enum.Font.GothamBold
 				}), "Text"),
-				AddThemeObject(SetProps(MakeElement("Label", "This part of the script is locked to Sirius Premium users. Purchase Premium in the Discord server (discord.gg/sirius)", 12), {
+				AddThemeObject(SetProps(MakeElement("Label", "YOU ARE LOCKED. You No Have A Real Clock Menu Account.", 12), {
 					Size = UDim2.new(1, -200, 0, 14),
 					Position = UDim2.new(0, 150, 0, 138),
 					TextWrapped = true,
@@ -1711,9 +1717,8 @@ function OrionLib:MakeWindow(WindowConfig)
 	end  
 	
 	OrionLib:MakeNotification({
-		Name = "Clock Menu UI - Needs Update",
-		Content = "You Need New Executor discord.gg/getxeno",
-		Time = 10
+		Name = "Clock Menu -  Your Executor Needs Update",
+		Content = "You Need New Executor discord.gg/getxeno / [WAVE EXECUTOR]"
 	})
 	
 
