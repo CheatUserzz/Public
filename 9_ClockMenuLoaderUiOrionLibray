@@ -1,4 +1,4 @@
-print ("This Libray Is From Clock Menu!")
+print ("CLOCK MENU ON THE TOP!")
 local notifSound = Instance.new("Sound",workspace)
 notifSound.PlaybackSpeed = 1.0
 notifSound.Volume = 1
@@ -20,7 +20,7 @@ local OrionLib = {
 	Flags = {},
 	Themes = {
 		Default = {
-			Main = Color3.fromRGB(0, 0, 0),
+			Main = Color3.fromRGB(240, 240, 240),
 			Second = Color3.fromRGB(32, 32, 32),
 			Stroke = Color3.fromRGB(60, 60, 60),
 			Divider = Color3.fromRGB(60, 60, 60),
@@ -39,10 +39,6 @@ local Icons = {}
 local Success, Response = pcall(function()
 	Icons = HttpService:JSONDecode(game:HttpGetAsync("https://raw.githubusercontent.com/evoincorp/lucideblox/master/src/modules/util/icons.json")).icons
 end)
-
-if not Success then
-	warn("\n Ocurred A Error On Trying Get Icons. Error code: " .. Response .. "\n")
-end	
 
 local function GetIcon(IconName)
 	if Icons[IconName] ~= nil then
@@ -1717,8 +1713,8 @@ function OrionLib:MakeWindow(WindowConfig)
 	end  
 	
 	OrionLib:MakeNotification({
-		Name = "Clock Menu -  Your Executor Needs Update",
-		Content = "You Need New Executor discord.gg/getxeno / [WAVE EXECUTOR]"
+		Name = "This Script Are Updated!",
+		Content = "Actual Version - 1.0V [RELEASED]"
 	})
 	
 
