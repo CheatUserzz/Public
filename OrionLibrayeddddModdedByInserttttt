@@ -653,14 +653,14 @@ function OrionLib:MakeWindow(WindowConfig)
 		UIHidden = true
 		OrionLib:MakeNotification({
 			Name = "Clock Menu - Interface Is Hidded",
-			Content = "Tap RightShift to reopen the interface",
+			Content = "Tap Insert to reopen the interface",
 			Time = 20
 		})
 		WindowConfig.CloseCallback()
 	end)
 
 	AddConnection(UserInputService.InputBegan, function(Input)
-		if Input.KeyCode == Enum.KeyCode.RightShift and UIHidden then
+		if Input.KeyCode == Enum.KeyCode.Insert and UIHidden then
 			MainWindow.Visible = true
 		end
 	end)
