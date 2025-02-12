@@ -19,27 +19,8 @@ local OrionLib = {
 			Text = Color3.fromRGB(240, 240, 240),
 			TextDark = Color3.fromRGB(150, 150, 150)
 		}
-
-		Cian = {
-			Main = Color3.fromRGB(0, 59, 44),
-			Second = Color3.fromRGB(0, 59, 44),
-			Stroke = Color3.fromRGB(255, 255, 255),
-			Divider = Color3.fromRGB(255, 255, 255),
-			Text = Color3.fromRGB(255, 255, 255),
-			TextDark = Color3.fromRGB(0, 0, 0)
-        }
-
-		White = {
-			Main = Color3.fromRGB(255, 255, 255),
-			Second = Color3.fromRGB(255, 255, 255),
-			Stroke = Color3.fromRGB(255, 255, 255),
-			Divider = Color3.fromRGB(255, 255, 255),
-			Text = Color3.fromRGB(0, 0, 0),
-			TextDark = Color3.fromRGB(0, 0, 0)
-        }
-
 	},
-	SelectedTheme = "Cian",
+	SelectedTheme = "Default",
 	Folder = nil,
 	SaveCfg = false
 }
