@@ -32,13 +32,13 @@ local function GetIcon(IconName)
 	end
 end   
 
-local Orion = Instance.new("ScreenGui")
-Orion.Name = "AlwaysWin"
+local AlwaysWin = Instance.new("ScreenGui")
+AlwaysWin.Name = "AlwaysWin"
 if syn then
 	syn.protect_gui(AlwaysWin)
-	Orion.Parent = game.CoreGui
+	AlwaysWin.Parent = game.CoreGui
 else
-	Orion.Parent = gethui() or game.CoreGui
+	AlwaysWin.Parent = gethui() or game.CoreGui
 end
 
 if gethui then
