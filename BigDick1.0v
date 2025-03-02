@@ -1,11 +1,8 @@
 print ("A full scripted programed by @clockmenu")
-game.Players:Chat("Programed By @clockmenu in Discord")
 game["Run Service"].RenderStepped:connect(function()
    settings().Physics.AllowSleep = false
    setsimulationradius(math.huge*math.huge,math.huge*math.huge)
 end)
- 
-print("Loaded Network Ownership Bypass!")
  
 --[[
 IronBrew:tm: obfuscation; Version 2.7.2
@@ -17,3 +14,5 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
     Text = "Made by @clockmenu in Discord";
     Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
 Duration = 16;
+
+game.Players:Chat("Programed By @clockmenu in Discord")
