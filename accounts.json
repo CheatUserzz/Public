@@ -1,17 +1,20 @@
 [
     {
-        "Username": "tsunami",
-        "Password": "Gostosin",
-        "Key": "1233454"
+        "Username": "Tsunami",
+        "Password": "Services",
+        "Key": "1",
+        "HWID": "YOUR_CPU_HWID_1"
     },
     {
         "Username": "usuario2",
         "Password": "senha456",
-        "Key": "def456"
+        "Key": "def456",
+        "HWID": "YOUR_CPU_HWID_2"
     },
     {
         "Username": "usuario3",
         "Password": "senha789",
-        "Key": "ghi789"
+        "Key": "ghi789",
+        "HWID": "YOUR_CPU_HWID_3"
     }
 ]
